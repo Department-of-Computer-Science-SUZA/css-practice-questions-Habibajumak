@@ -1,14 +1,316 @@
+QUESTION 1
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="question01.css">
+</head>
+<body>
+    <table border="1">
+        <div class="google-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+             alt="Google Logo" class="google-logo">
+            <form action="https://www.google.com/search" method="GET" class="search-form">
+            <input type="text" name="q" class="search-input" autofocus><br><br>
+            <button type="submit" class="search-button">Google Search</button>
+            <button type="submit" class="feeling-lucky-button">I'm Feeling Lucky</button>
+            </form>
+        </div>
+    </table>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .google-container {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .google-logo {
+    width: 272px;
+    height: 92px;
+  }
+  
+  .search-form {
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-button, .feeling-lucky-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d9dce0;
+    color: #070707;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover, .feeling-lucky-button:hover {
+    background-color: #357ae8;
+  }
+  table{
+    border:2px solid rgb(14, 13, 13) ;
+    border-collapse: collapse;
+}
 
+  QUESTION TWO
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FloatingImage</title>
+    <style>
+        body{
+            border-style: groove;
+    
+        }
+        p {
+    text-align: justify;
+   }
+   .top{
+    width: 40%;
+   }
+   img {
+    max-width: 60%;
+    max-height: 20%;
+    float: right;
+    margin-top: 5px;
+   } 
+    </style>
+</head>
+<body>
+    <div class="top">
+    <img src="float.jpg">
+    </div>
+    <p>Coffee is a brewed drink with a distinct aroma and flavor, 
+        prepared from roasted coffee beans, the seeds found inside "berries" of the Coffea plant.
+         Coffee plants are cultivated in over 70 countries, primarily in eccuatorial Latin America, 
+         Southeast Asia; India and Africa. The two most commonly grown are the highly regarded arabica, 
+         and the less sophisticated but stronger and more hardy robusta. The latter is resistant to the coffee
+          leaf rust, Hemileia vastatrix, but has a more bitter taste. Once ripe, coffee beans are picked,
+           processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural 
+           commodities in the world. Once traded, the beans are roasted to varying degrees, depending on the 
+           desired flaver, before being ground and brewed to create coffee. Coffee is slightly acidic and can 
+           have a stimulating effect on humans because of its caffeine content. It is one of the most popular 
+           drinks in the world. It can be prepared and presented in a variety of ways. The effiest of coffee on 
+           human bealih has been a subject of many studies; however, results have varied in terms of coffee's 
+           relative benefit. The majority of recent research suggests that moderate coffee consumption is benign 
+           or mildly beneficial in healthy adults. However, the diterpenes in coffee may increase the risk of heart
+            disease.</p>
+    
+</body>
+</html>
+QUSTION THREE
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="question02.css">
 </head>
-
 <body>
-    <p>Please attempt all questions in HTML CSS Assignments</p>
-</body>
+    <div id="page1">
+        <h1>Personal Details</h1>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>HABIBA JUMA KHAMIS</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>23 YEARS  OLD</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>habibajumak0522@gmail.com</td>
+            </tr>
+        </table>
+        <a href="page2.html">Interests & Hobbies</a> 
+        <a href="page3.html"><img src="friends.jpg" alt="Friends"></a> 
+    </div>
 
+    <div id="page2">
+        <h1>Interests & Hobbies</h1>
+        <p>im intrested in business if god wishes i planned to have my own busines 
+            and for the side of hobbies i like cooking and backing different food.</p>
+        <a href="page1.html">Personal Details</a> 
+        <a href="page3.html"><img src="friends.jpg" alt="Friends"></a> 
+    </div>
+    <div id="page3">
+        <h1>Friends</h1>
+        <p>i just got people beside me igot no friend but people around me we smile with jealosy in our minds 
+            icant call them friends right?.</p>
+        <a href="page1.html">Personal Details</a> 
+        <a href="page2.html">Interests & Hobbies</a> 
+    </div>
+</body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table td {
+    padding: 5px;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+QUESTION FOUR
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course Tutorial Page</title>
+  <link rel="stylesheet" href="quetsion03.css">
+</head>
+<body>
+
+  <header>
+    <h1>Course Name: Introduction to Web Development</h1>
+    <img src="course_logo.png" alt="Course Logo">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#overview">Course Overview</a></li>
+      <li><a href="#module1">Module 1: HTML Basics</a></li>
+      <li><a href="#module2">Module 2: CSS Fundamentals</a></li>
+      <li><a href="#module3">Module 3: JavaScript Essentials</a></li>
+    </ul>
+  </nav>
+
+  <section id="overview">
+    <h2>Course Overview</h2>
+    <p>This course provides an introduction to web development, covering the basics of HTML, CSS, and 
+        JavaScript.</p>
+  </section>
+
+  <section id="module1">
+    <h2>Module 1: HTML Basics</h2>
+    <h3>Topics Covered:</h3>
+    <ol>
+      <li>Introduction to HTML</li>
+      <li>HTML Elements and Tags</li>
+      <li>HTML Document Structure</li>
+    </ol>
+  </section>
+
+  <section id="module2">
+    <h2>Module 2: CSS Fundamentals</h2>
+    <h3>Topics Covered:</h3>
+    <ul>
+      <li>CSS Syntax</li>
+      <li>Selectors and Properties</li>
+      <li>Layout and Positioning</li>
+    </ul>
+  </section>
+  <section id="module3">
+    <h2>Module 3: JavaScript Essentials</h2>
+    <h3>Topics Covered:</h3>
+    <dl>
+      <dt>Introduction to JavaScript</dt>
+      <dd>Basic syntax and data types</dd>
+      <dt>Control Flow and Functions</dt>
+      <dd>Conditional statements and loops</dd>
+      <dt>DOM Manipulation</dt>
+      <dd>Accessing and modifying HTML elements</dd>
+    </dl>
+  </section>
+  <footer>
+    <p>&copy; 2024 OnlineCourse.com. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
